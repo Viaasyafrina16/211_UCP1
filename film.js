@@ -18,4 +18,12 @@ module.exports = (sequelize, DataTypes) => {
         Tahun_terbit:{
             type : DataTypes.INTEGER,
         },
+         Genre:{
+            type : DataTypes.STRING,
+        }
+      });
+    return film;
+};
+
+       
 

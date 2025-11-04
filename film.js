@@ -4,3 +4,9 @@ module.exports = (sequelize, DataTypes) => {
             type : DataTypes.INTEGER,
             autoIncrement : true,
             primaryKey : true
+
+        },
+        Nama_film:{
+            type : DataTypes.STRING,
+        },
+

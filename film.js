@@ -9,4 +9,8 @@ module.exports = (sequelize, DataTypes) => {
         Nama_film:{
             type : DataTypes.STRING,
         },
+        Deskripsi:{
+            type : DataTypes.STRING,
+        },
+        
 

@@ -60,5 +60,19 @@ app.put('/film/:id', async (req,res)=>{
     }
 });
 
+app.delete('/film/:id', async (req, res) => {
+    const id = req.params.id;
+    try {
+        const film = await db.film.findByPk(id);
+        if (!film) {
+            return res.status(404).send({ message: 'film not found' });
+        }
+        await film.destroy();
+        res.send({ message: 'film deleted' });
+    } catch (error) {
+        res.status(500).send(err);
+    }
+});
+
 
 

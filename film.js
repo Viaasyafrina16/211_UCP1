@@ -12,5 +12,10 @@ module.exports = (sequelize, DataTypes) => {
         Deskripsi:{
             type : DataTypes.STRING,
         },
-        
+        Sutradara:{
+            type : DataTypes.STRING,
+        },
+        Tahun_terbit:{
+            type : DataTypes.INTEGER,
+        },
 

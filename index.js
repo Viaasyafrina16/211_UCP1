@@ -34,4 +34,13 @@ app.post("/film",async (req,res) => {
     }
 });
 
+app.get('/film', async (req,res)  => {
+    try{
+        const film = await db.film.findAll();
+        res.send(film);
+    } catch (err) {
+        res.send(err);
+    }
+});
+
 
